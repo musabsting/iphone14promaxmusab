@@ -1,0 +1,14 @@
+.form-control{
+
+    background-image:linear-gradient(#ebe5e5,#641446)  ;
+    outline: #641446;
+    border: none;
+    opacity: 20%;
+    color: #171515;
+}
+.search{
+    background-image:linear-gradient(#ebe5e5,#641446)  ;
+    outline: none;
+    border: none;
+    color: #171515;
+}
