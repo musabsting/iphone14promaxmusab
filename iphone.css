@@ -7,10 +7,11 @@
 }
 .container{
     width: 300px;
-    height: 640px;
-    background-image: linear-gradient(#ebe5e5,#641446,#03031a,#14155e,#0f1041,#ebe5e5) ;
+    height: 650px;
+    background-image: linear-gradient(rgb(108, 102, 102),#4b0c33,#0a0a2c,#14155e,#0f1041,rgb(57, 55, 55));
+    background-size:cover;
     margin-right: 59px;
-  margin-top: 20px;
+  margin-top: 10px;
     border-radius: 30px;
     border: 8px solid black;  
    
@@ -33,22 +34,33 @@ div p{
 
 }
 .weather{
-    width: 120px;
+    width: 110px;
     background-image: linear-gradient(#14155e,#3b3c7b,#ebe5e5);
-    height:120px ;
+    height:110px ;
  opacity: 40%;
 
 }
 
 .calender{
-    width: 120px;
+    width: 110px;
     background-image: linear-gradient(#8484ac,#a1a3f5,#ebe5e5);
-    height:120px ;
+    height:110px ;
     opacity: 30%;
 }
 .footer{
     background-image: linear-gradient(#14155e,#c7c0c0);
  
-    opacity: 90%;
+    opacity: 80%;
+    height: 63px;
 
+}
+
+
+textarea{
+    background-color: #3b3c7b;
+    color: rgb(253, 255, 253);
+}
+.go a {
+    text-decoration: none;
+    margin-bottom: 10px;
 }

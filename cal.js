@@ -12,7 +12,7 @@ btndynamic.addEventListener("click",()=>{
   let wi =document.querySelector(".net");
   wi.classList.add("invisible");
   let ele = document.createElement("p");
-  let node= document.createTextNode("To musab iphone")
+  let node= document.createTextNode("wilcome this is calculator")
   ele.appendChild(node);
   btndynamic.appendChild(ele);
 });
@@ -35,5 +35,43 @@ btndynamic.onmouseleave=function(){
     location.reload();
 }
 
-  
-
+let show = document.querySelector(".form-control");
+let btnall = document.querySelectorAll(".btn");
+let equal = document.querySelector(".equal");
+let ac = document.querySelector(".ac");
+console.log(btnall)
+console.log(show)
+console.log(ac)
+console.log(equal)
+ac.addEventListener("click",()=>{
+    show.innerText="";
+})
+btnall.forEach((btn)=>{
+    btn.addEventListener("click",(e)=>{
+        console.log("clicked")
+        switch(e.target.innerText){
+            case'C':
+            if(show.innerText){
+                show.innerText=show.innerText.slice(0,-1);
+            }
+            break;
+            case"=":
+            try{
+                
+            show.innerText= eval(show.innerText);
+            } catch{
+                show.innerText="Error!"
+            }
+            break;
+            case".":
+            if(!String(show.innerText).includes(".")&& show.innerText!=""){
+                show.innerText +=".";
+            }
+        break;
+            default:
+                show.innerText += e.target.innerText;
+                console.log(e)
+                console.log(e.target)
+        }
+    })
+});
