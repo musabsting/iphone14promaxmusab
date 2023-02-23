@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 700px;
+            margin-left: 90px;
+display: none;
+        }
+        
+        .red{
+            background-color: red;
+            width:60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .red,.green,.black:hover{
+          opacity: 90%;
+
+        }
+
+        .black{
+            background-color: black;
+            width:60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .green{
+            background-color: green;
+            width:60px;
+            height: 60px;
+            border-radius: 50%;
+           
+        }
+        .btn{
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            cursor:grab;
+        
+            background-color: rgb(189 189 212);
+            border-radius: 10px;
+            opacity: 80%;
+            list-style-type: none;
+        }
+        .show{
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            margin-top: 10px;
+            background-color: red;
+        }
+        button{
+            border: none;
+        }
+.one{
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
+        
+.tow{
+    position: absolute;
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    z-index: 3;
+}
+        
+.three{
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    z-index: 2;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<ul class="btn">
+
+    <li class=" red cl "  data-color="red" type="button"></li>
+    <li class=" black cl  " data-color="black" type="button"></li>
+    <li class=" green  cl " data-color="green" type="button"></button>
+   
+
+    </ul>
+
+        <div class="show"> </div>
+    </div>
+    
+    <div class="one"> m</div>
+    <div class="tow">m</div>
+    <div class="three">m</div>
+    
+    <script src="test.js"></script>
+</body>
+</html>
