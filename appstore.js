@@ -176,11 +176,8 @@ console.log("clicked")
 
   let  send = document.querySelector(".save");
   send.addEventListener("click",()=>{
-
     getapp.style.cssText="  visibility: hidden; "
     mainpage.style.cssText="visibility: visible;transform:scale(1); transition:1s;";
-   
-  
   })
 
 
