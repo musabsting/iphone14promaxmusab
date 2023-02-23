@@ -526,7 +526,7 @@ font-size: small;
 
 .linefour{
   display: flex;
-  background-color: rgb(44, 41, 41);
+  background-color: rgb(44, 41, 41)  ;
 border-radius: 10px;
 margin-top: 10px;
 color: rgb(198, 205, 218);
@@ -534,6 +534,7 @@ text-transform: capitalize;
 font-size: small;
 height: 35px;
 align-items: center;
+
 }
 .per{
   margin-top: 10px;

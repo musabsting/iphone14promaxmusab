@@ -178,6 +178,14 @@ console.log("clicked")
   send.addEventListener("click",()=>{
     getapp.style.cssText="  visibility: hidden; "
     mainpage.style.cssText="visibility: visible;transform:scale(1); transition:1s;";
+    download.innerText="";
+    download.style.cssText="background-color:inherit; marging-left:50px width:30px;height:30px"
+    let node =document.createElement("div");
+    node.classList.add("spinner-border");
+    node.classList.add("text-primary");
+    download.appendChild(node)
+ 
   })
+
 
 
