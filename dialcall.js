@@ -3,6 +3,21 @@ let btndynamic =document.querySelector("#dynamic");
 let btnhide =document.querySelector("#btnhide");
 let imge =document.querySelector(".imag");
 
+let time= document.querySelector(".time");
+let hour= document.querySelector(".hour");
+let min= document.querySelector(".min");
+let se= document.querySelector(".min");
+console.log(time)
+console.log(hour)
+console.log(min)
+
+let gethour= new Date();
+let ho= gethour.getHours()
+let minu= gethour.getMinutes()
+let sec= gethour.getSeconds()
+console.log(ho)
+time.innerHTML=ho+":"+minu;
+
 console.log(caller)
 btndynamic.addEventListener("click",()=>{
   btnhide.style.display="none";

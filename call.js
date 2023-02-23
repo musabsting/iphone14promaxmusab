@@ -29,6 +29,21 @@ let remohash = document.querySelector(".remhash");
 let remostar = document.querySelector(".remstar");
 
 
+let time= document.querySelector(".time");
+let hour= document.querySelector(".hour");
+let min= document.querySelector(".min");
+let se= document.querySelector(".min");
+console.log(time)
+console.log(hour)
+console.log(min)
+
+let gethour= new Date();
+let ho= gethour.getHours()
+let minu= gethour.getMinutes()
+let sec= gethour.getSeconds()
+console.log(ho)
+time.innerHTML=ho+":"+minu;
+
 console.log(caller);
 console.log(numbers_dial1);
 console.log(numbers_dial2);
@@ -159,5 +174,6 @@ de.onclick=function(){
 de.onmouseleave=function(){
     location.reload();
 }
+time.innerHTML=ho+":"+minu;
 
 

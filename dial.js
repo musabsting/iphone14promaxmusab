@@ -2,7 +2,7 @@ let caller = document.querySelector(".calldail");
 let btndynamic =document.querySelector("#dynamic");
 let btnhide =document.querySelector("#btnhide");
 let imge =document.querySelector(".imag");
-
+time.innerHTML=ho+":"+minu;
 console.log(caller)
 btndynamic.addEventListener("click",()=>{
   btnhide.style.display="none";
